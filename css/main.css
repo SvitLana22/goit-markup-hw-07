@@ -319,21 +319,21 @@ body {
   color: var(--title-color);
 }
 
-.header-list {
+.menu {
   display: flex;
 }
-.header-list .current {
+.menu .current {
   color: var(--accent-color);
 }
-.header-list .current::after {
+.menu .current::after {
   opacity: 1;
 }
 
-.header-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-link {
+.menu__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -345,7 +345,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.header-link::after {
+.menu__link::after {
   content: "";
   display: block;
   width: 100%;
@@ -357,24 +357,24 @@ body {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover, .header-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.header-info-list {
+.connect {
   display: flex;
   margin-left: auto;
 }
 
-.header-info-item {
+.connect__item {
   color: var(--text-color);
 }
-.header-info-item:not(:last-child) {
+.connect__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-info-mail,
-.header-info-tel {
+.connect__mail,
+.connect__tel {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -386,13 +386,13 @@ body {
   color: var(--text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-info-mail:hover, .header-info-mail:focus,
-.header-info-tel:hover,
-.header-info-tel:focus {
+.connect__mail:hover, .connect__mail:focus,
+.connect__tel:hover,
+.connect__tel:focus {
   color: var(--accent-color);
 }
 
-.header-icon {
+.connect__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -450,15 +450,15 @@ body {
   padding: 94px 0;
 }
 
-.about-list {
+.benefits {
   display: flex;
 }
 
-.about-item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-icon {
+.benefits__icon {
   width: 270px;
   height: 120px;
   background: #F5F4FA;
@@ -469,7 +469,7 @@ body {
   margin-bottom: 30px;
 }
 
-.about-top-text {
+.benefits__top-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -479,7 +479,7 @@ body {
   margin-bottom: 10px;
 }
 
-.about-text {
+.benefits__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
