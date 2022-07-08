@@ -1,6 +1,4 @@
 /*---------------HEADER------------- */
-
-
 .header {
     border-bottom: 1px solid #ECECEC;
     .container {
@@ -8,7 +6,6 @@
         align-items: center;
         }
 }
-
 .header-logo-web {
     margin-right: 93px;
     padding-top: 24px;
@@ -20,12 +17,10 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-
 .header-logo {
     color: var(--title-color);
 }
-
-.header-list {
+.menu {
     display: flex;
     .current {
         color: var(--accent-color);
@@ -34,12 +29,10 @@
         opacity: 1;
         }
 }
-
-.header-item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
-
-.header-link {
+.menu__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -67,21 +60,18 @@
         color: var(--accent-color);
         }
 }
-
-.header-info-list {
+.connect {
     display: flex;
     margin-left: auto;
 }
-
-.header-info-item {
+.connect__item {
     color: var(--text-color);
     &:not(:last-child) {
         margin-right: 50px;
         }
 }
-
-.header-info-mail,
-.header-info-tel {
+.connect__mail,
+.connect__tel {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -97,8 +87,7 @@
         color: var(--accent-color);
         }
 }
-
-.header-icon {
+.connect__icon {
     fill: currentColor;
     margin-right: 10px;
 }
